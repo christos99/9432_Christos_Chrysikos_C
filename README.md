@@ -4,6 +4,7 @@
 ## Part 1:
 
 ### 1.
+[Output of Xeon](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Output%20Files/Xeon.txt)
 
 #### Dynamic Power (Power Modeling):  
 Circuits dissipate dynamic power when they charge and discharge the capacitive loads to switch states. Dynamic power is proportional to the total load capacitance, the supply voltage, the voltage swing during switching, the clock frequency, and the activity factor.
@@ -17,3 +18,13 @@ Transistors in circuits leak, dissipating static power. Leakage current depends 
 [Reference](https://www.hpl.hp.com/research/mcpat/McPATAlpha_TechRep.pdf)
 
 The dynamic power and the leakage are not affected by the different progrmas runnning or the time but only affected by the physical parameters of the circuit (processor).
+
+## Part 2:
+
+
+## Part 3:
+
+[Output of Xeon](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Output%20Files/Xeon.txt)  
+[Output of ARM](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Output%20Files/ARM.txt)
+
+
