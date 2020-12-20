@@ -19,10 +19,12 @@ Transistors in circuits leak, dissipating static power. Leakage current depends 
 
 The dynamic power and the leakage are not affected by the different progrmas runnning or the time but only affected by the physical parameters of the circuit (processor).
 
-## Part 2:
+### 2.
+
+The data that McPAT gives us is insufficient in order for us to calculate how much working time we are going to get from the same battery. Even thought the one processor is much more energy efficient than the other one, we also need to see how much faster it is. If let's assume that the energy efficient proccessor is 100 times slower than the other one then the total runtime dynamic for a dedicated program is going to be greater and therefore we are going to get less working time from the battery. 
 
 
-## Part 3:
+### 3.  
 Let's assume that Xeon takes 10 seconds to run a program. Being 40 times faster than ARM, ARM A9 needs 40 seconds to run the same program.
 
 **Runtime Dynamic** 
