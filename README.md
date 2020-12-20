@@ -23,8 +23,19 @@ The dynamic power and the leakage are not affected by the different progrmas run
 
 
 ## Part 3:
+Let't asume that Xeon takes 10 seconds to run a program. With that in mind we asume that ARM A9 needs 40 seconds.
 
-[Output of Xeon](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Output%20Files/Xeon.txt)  
-[Output of ARM](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Output%20Files/ARM.txt)
+**Runtime Dynamic** 
+
+  * Xeon == 72.9199 W
+    EDP == 72.9199 * 10 == 729.199
+  * ARM A9  == 2.96053 W  
+    EDP == 2.96053 * 40 == 118.4212
+    
+ It is obvious that even though the ARM A9 runs for a longer period of time, it is much more energy efficient than the Xeon proccesso. In order for the Xeon proccessor to be as energy efficient as ARM it would need to run 245.5 times faster than ARM.
+  
+     
+* [Output of Xeon](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Output%20Files/Xeon.txt)  
+* [Output of ARM](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Output%20Files/ARM.txt)
 
 
