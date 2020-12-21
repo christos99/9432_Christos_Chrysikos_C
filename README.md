@@ -1,4 +1,4 @@
-# 9432_Christos_Chrysikos_LAB_C
+# 9432_Christos_Chrysikos_C
 
 
 ## Part 1:
@@ -21,7 +21,8 @@ Example using the same system running two different benchmarks:
   * leakage = 2.129390 W 
   * runtime = 0.118297 s 
 
-We see that spechmmer has slighly greater dynamic power value than specbzip. Runtime does not affect the dynamic or static power.
+We see that spechmmer has slighly greater dynamic power value than specbzip. It is a fact that both programms run on the same system and the only diffennce is runntime.
+
 
 
 [Reference](https://www.hpl.hp.com/research/mcpat/McPATAlpha_TechRep.pdf)
@@ -47,11 +48,11 @@ Let's assume that Xeon takes 10 seconds to run a program. Being 40 times faster 
 **Runtime Dynamic** 
 
   * Xeon == 72.9199 W  
-    EDP == (72.9199 + 36.8319) x 10 == 1097 mJ
+    EDP == (72.9199 + GL) x 10 == 729.199 + 10GL mJ
   * ARM A9  == 2.96053 W  
-    EDP == (2.96053 + 0.108687) x 40 == 122.7652 mJ
+    EDP == (2.96053 + GL) x 40 == 118.4212 + 40GL mJ
     
- It is obvious that even though the ARM A9 runs for a longer period of time, it is much more energy efficient than the Xeon proccessor.
+ It is obvious that even though the ARM A9 runs for a longer period of time, it is much more energy efficient than the Xeon proccessor. In order for the Xeon proccessor to be as energy efficient as ARM it would need to run 245.5 times faster than ARM.
   
      
 * [Output of Xeon](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Output%20Files/Xeon.txt)  
@@ -62,7 +63,7 @@ Let's assume that Xeon takes 10 seconds to run a program. Being 40 times faster 
 
 
 ### 1.
-Energy Consumed for all the different occasions.
+Here are in categories the parameter changed every time (ex. default_configuration_of_gem5_L1_Cache_64kB). In the end I write the only parameter altered.
 
 #### L1 Cache
 
@@ -363,11 +364,11 @@ Energy Consumed for all the different occasions.
 
 * spechmmer - Peak Power
 
-![spechmmer]()
+![spechmmer](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Graphs/spechmmer_Peak_Power.png)
 
 * specjeng - Peak Power
 
-![specjeng]()
+![specjeng](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Graphs/specjeng_Peak_Power.png)
 
 * speclibm - Peak Power
 
