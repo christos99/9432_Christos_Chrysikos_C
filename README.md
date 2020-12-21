@@ -172,6 +172,10 @@ Energy Consumed for all the different occasions.
 
 ![spechmmer](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Graphs/spechmmer.png)
 
+* specjeng
+
+![specjeng](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Graphs/specjeng.png)
+
 
 
 
