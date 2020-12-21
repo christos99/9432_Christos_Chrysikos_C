@@ -9,6 +9,22 @@
 #### Dynamic Power (Power Modeling):  
 Circuits dissipate dynamic power when they charge and discharge the capacitive loads to switch states. Dynamic power is proportional to the total load capacitance, the supply voltage, the voltage swing during switching, the clock frequency, and the activity factor. Dynamic Power does  seem to be affected by the program that we run but not as much as of changing system paramateters.
 
+Example using the same system running two different benchmarks:
+
+* [specbzip](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Energy%20results/specbzip/L1_128_specbzip-energy.txt) 
+  * dynamic power = 0.439631 W  
+  * leakage = 2.129390 W 
+  * runtime = 0.157622 s 
+  
+* [spechmmer](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Energy%20results/spechmmer/L1_128_spechmmer-energy.txt)
+  * dynamic power = 0.491212 W  
+  * leakage = 2.129390 W 
+  * runtime = 0.118297 s 
+
+We see that spechmmer has slighly greater dynamic power value than specbzip. It is a fact that both programms run on the same system and the only diffennce is runntime.
+
+
+
 [Reference](https://www.hpl.hp.com/research/mcpat/McPATAlpha_TechRep.pdf)
 
 #### Leakage (Power Modeling):
