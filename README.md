@@ -360,7 +360,7 @@ Here are in categories the parameter changed every time (ex. default_configurati
 
 * specbzip - Peak Power
 
-![specbzip]()
+![specbzip](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Graphs/specbzip_Peak_Power.png)
 
 * spechmmer - Peak Power
 
