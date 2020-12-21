@@ -28,13 +28,15 @@ We see that spechmmer has slighly greater dynamic power value than specbzip. Run
 
 
 
-[Reference](https://www.hpl.hp.com/research/mcpat/McPATAlpha_TechRep.pdf)
+[McPAT 1.0: An Integrated Power, Area, and Timing Modeling Framework for
+Multicore Architectures](https://www.hpl.hp.com/research/mcpat/McPATAlpha_TechRep.pdf)
 
 #### Leakage :
 
 Transistors in circuits leak, dissipating static power. Leakage current depends on the width of the transistors and the local state of the devices. There are two leakage mechanisms. Subthreshold leakage occurs because a small current passes between the source and drain of off-state transistors. Gate leakage is the current leaking through the gate terminal, and varies greatly with the state of the device. Leakage is not affected by the executable but from the characteristics of the system,same for all applications.
 
-[Reference](https://www.hpl.hp.com/research/mcpat/McPATAlpha_TechRep.pdf)
+[McPAT 1.0: An Integrated Power, Area, and Timing Modeling Framework for
+Multicore Architectures](https://www.hpl.hp.com/research/mcpat/McPATAlpha_TechRep.pdf)
 
 
 
