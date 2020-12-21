@@ -435,7 +435,8 @@ Here are in categories the parameter changed in every simulation (ex. default_co
 We can see from the above graphs that peak power is strictly correlated with L1 Cache size (L2 Cache also but it insignificant), the bigger the cache the greater the peak power and therefore the bigger the EDP.It is also important to say that there was no difference in Peak Power between different bechmarks running at the same system, which is very reasonable (we don't expect our proccessor to be faster depending on the program). We assume that every relut we got can differ in some percentage from the reality. This occurs cause McPAT is a simulator just like gem5 and it simulates the reults based on the real product.
 
 
-
+[gem5, GPGPUSim, McPAT, GPUWattch, "Your favorite simulator here"
+Considered Harmful](https://research.cs.wisc.edu/vertical/papers/2014/wddd-sim-harmful.pdf)
 
 
 
