@@ -253,6 +253,8 @@ Energy Consumed for all the different occasions.
 
 ### GRAPHS
 
+### EDP
+
 * specbzip - EDP
 
 ![specbzip](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Graphs/specbzip.png)
@@ -267,18 +269,20 @@ Energy Consumed for all the different occasions.
 
 * speclibm - EDP
 
-![specjeng](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Graphs/speclibm.png)
+![speclibm](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Graphs/speclibm.png)
 
 * specmcf - EDP
 
 ![specmcf](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Graphs/specmcf.png)
 
+### PeaK Power
 
 * specbzip - Peak Power
 
 ![specbzip]()
 
 * spechmmer - Peak Power
+
 ![spechmmer]()
 
 * specjeng - Peak Power
@@ -287,7 +291,7 @@ Energy Consumed for all the different occasions.
 
 * speclibm - Peak Power
 
-![specjeng]()
+![speclibm](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Graphs/speclibm_Peak_Power.png)
 
 * specmcf - Peak Power
 
