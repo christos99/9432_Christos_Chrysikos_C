@@ -331,6 +331,8 @@ Here are in categories the parameter changed in every simulation (ex. default_co
 * [Energy Results Files-speclibm](https://github.com/christos99/9432_Christos_Chrysikos_C/tree/main/Energy%20results/speclibm)
 * [Energy Results Files-specbmcf](https://github.com/christos99/9432_Christos_Chrysikos_C/tree/main/Energy%20results/specmcf) 
 
+* [McPAT results for Peak Power](https://github.com/christos99/9432_Christos_Chrysikos_C/tree/main/MC_PAT_RESULTS)
+
 
 ### 2.
 
