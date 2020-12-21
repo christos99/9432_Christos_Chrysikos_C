@@ -1,12 +1,13 @@
 # 9432_Christos_Chrysikos_C
 
 
-## Part 1: Getting to know McPAT
+## <ins>Part 1: Getting to know McPAT</ins>
+
 
 ### 1.
 [Output of Xeon](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Output%20Files/Xeon.txt)
 
-#### Dynamic Power (Power Modeling):  
+#### Dynamic Power :
 Circuits dissipate dynamic power when they charge and discharge the capacitive loads to switch states. Dynamic power is proportional to the total load capacitance, the supply voltage, the voltage swing during switching, the clock frequency, and the activity factor. Dynamic Power does  seem to be affected by the program that we run but not as much as of changing system paramateters.
 
 Example using the same system running two different benchmarks:
@@ -27,7 +28,7 @@ We see that spechmmer has slighly greater dynamic power value than specbzip. Run
 
 [Reference](https://www.hpl.hp.com/research/mcpat/McPATAlpha_TechRep.pdf)
 
-#### Leakage (Power Modeling):
+#### Leakage :
 
 Transistors in circuits leak, dissipating static power. Leakage current depends on the width of the transistors and the local state of the devices. There are two leakage mechanisms. Subthreshold leakage occurs because a small current passes between the source and drain of off-state transistors. Gate leakage is the current leaking through the gate terminal, and varies greatly with the state of the device. Leakage is not affected by the executable but from the characteristics of the system,same for all applications.
 
@@ -61,11 +62,11 @@ Let's assume that Xeon takes 10 seconds to run a program. Being 40 times faster 
 
 
 
-## Part 2: gem5 and McPAT
+## <ins>Part 2: gem5 and McPAT</ins>
 
 
 ### 1.
-Here are in categories the parameter changed every time (ex. default_configuration_of_gem5_L1_Cache_64kB). In the end I write the only parameter altered.
+Here are in categories the parameter changed in every simulation (ex. default_configuration_of_gem5_L1_Cache_64kB). The ending of the name shows the changed parameter.
 
 #### L1 Cache
 
@@ -379,7 +380,7 @@ Here are in categories the parameter changed every time (ex. default_configurati
 
 ![specmcf](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Graphs/specmcf_Peak_Power.png)
 
-### Conclussion
+## <ins>Conclussion</ins>
 
 We can see from the above graphs that peak power is strictly correlated with L1 Cache size, the bigger the cache the greater the peak power. We assume that every relut we got can differ in some percentage from the reality. This occurs cause McPAT is a simulator just like gem5 and simulates the reults based on algorithms.
 
