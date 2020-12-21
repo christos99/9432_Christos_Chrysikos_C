@@ -79,7 +79,7 @@ Energy Consumed for all the different occasions.
     * Peak Power(Core + L2)  = 
   * speclibm:
     * Energy = 469.125388 mJ
-    * Peak Power(Core + L2)  = 
+    * Peak Power(Core + L2)  = 3.088 W
   * specmcf:
     * Energy = 214.602407 mJ
     * Peak Power(Core + L2) = 3.088 W
@@ -95,7 +95,7 @@ Energy Consumed for all the different occasions.
     * Peak Power(Core + L2) = 
   * speclibm:
     * Energy = 634.297256 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 3.545 W
   * specmcf:
     * Energy = 289.067039 mJ
     * Peak Power(Core + L2) = 3.545 W
@@ -112,7 +112,7 @@ Energy Consumed for all the different occasions.
     * Peak Power(Core + L2) = 
   * speclibm:
     * Energy = 449.788309 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 3.86 W
   * specmcf:
     * Energy = 347.131705 mJ
     * Peak Power(Core + L2) = 3.86 W
@@ -134,7 +134,7 @@ Energy Consumed for all the different occasions.
     * Peak Power(Core + L2) = 
   * speclibm:
     * Energy = 362.957233 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.485 W 
   * specmcf:
     * Energy = 184.659352 mJ
     * Peak Power(Core + L2) = 2.485 W 
@@ -150,7 +150,7 @@ Energy Consumed for all the different occasions.
     * Peak Power(Core + L2) = 
   * speclibm:
       * Energy = 362.957233 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.485 W 
   * specmcf:
       * Energy = 184.659352 mJ
     * Peak Power(Core + L2) = 2.485 W 
@@ -166,7 +166,7 @@ Energy Consumed for all the different occasions.
     * Peak Power(Core + L2) = 
   * speclibm:
       * Energy = 362.957233 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.485 W
   * specmcf:
       * Energy = 184.659352 mJ
     * Peak Power(Core + L2) = 2.485 W
@@ -182,7 +182,7 @@ Energy Consumed for all the different occasions.
     * Peak Power(Core + L2) = 
   * speclibm:
       * Energy = 362.957233 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) =  2.485 W
   * specmcf:
       * Energy = 184.659352 mJ
     * Peak Power(Core + L2) = 2.485 W
@@ -190,57 +190,138 @@ Energy Consumed for all the different occasions.
 #### L2 Cache
 
 * 512kB
-  * specbzip:243.260147 mJ
-  * spechmmer:181.772249 mJ
-  * specjeng:932.459064 mJ
-  * speclibm:360.837240 mJ
-  * specmcf:183.856990 mJ
+  * specbzip:
+      * Energy = 2243.260147 mJ
+    * Peak Power(Core + L2) = 
+  * spechmmer:
+      * Energy = 181.772249 mJ
+    * Peak Power(Core + L2) = 
+  * specjeng:
+      * Energy = 932.459064 mJ
+    * Peak Power(Core + L2) = 
+  * speclibm:
+      * Energy = 360.837240 mJ 
+    * Peak Power(Core + L2) = 
+  * specmcf:
+      * Energy = 183.856990 mJ
+    * Peak Power(Core + L2) = 2.315
 * 1024kB
-  * specbzip:240.673442 mJ
-  * spechmmer:181.995179 mJ
-  * specjeng:935.426950 mJ
-  * speclibm:361.694166 mJ
-  * specmcf:184.121653 mJ
+  * specbzip:
+      * Energy = 240.673442 mJ
+    * Peak Power(Core + L2) = 
+  * spechmmer:
+      * Energy = 181.995179 mJ
+    * Peak Power(Core + L2) = 
+  * specjeng:
+      * Energy = 935.426950 mJ 
+    * Peak Power(Core + L2) = 
+  * speclibm:
+      * Energy = 361.694166 mJ
+    * Peak Power(Core + L2) = 
+  * specmcf:
+      * Energy = 184.121653 mJ
+    * Peak Power(Core + L2) = 2.385
 * 2048kB
-  * specbzip:239.703350 mJ
-  * spechmmer:182.315531 mJ
-  * specjeng:940.009153 mJ
-  * speclibm:362.957233 mJ
-  * specmcf:184.659352 mJ
+  * specbzip:
+      * Energy = 239.703350 mJ
+    * Peak Power(Core + L2) = 
+  * spechmmer:
+      * Energy = 182.315531 mJ
+    * Peak Power(Core + L2) = 
+  * specjeng:
+      * Energy = 940.009153 mJ
+    * Peak Power(Core + L2) = 
+  * speclibm:
+      * Energy = 362.957233 mJ
+    * Peak Power(Core + L2) = 
+  * specmcf:
+      * Energy = 184.659352 mJ
+    * Peak Power(Core + L2) = 2.485
 * 4096kB
-  * specbzip:239.557962 mJ
-  * spechmmer:182.978396 mJ
-  * specjeng:946.424763 mJ
-  * speclibm:364.911324 mJ
-  * specmcf:185.915461 mJ
+  * specbzip:
+      * Energy = 239.557962 mJ
+    * Peak Power(Core + L2) = 
+  * spechmmer:
+      * Energy = 182.978396 mJ
+    * Peak Power(Core + L2) = 
+  * specjeng:
+      * Energy = 946.424763 mJ
+    * Peak Power(Core + L2) = 
+  * speclibm:
+      * Energy = 364.911324 mJ
+    * Peak Power(Core + L2) = 
+  * specmcf:
+      * Energy = 185.915461 mJ
+    * Peak Power(Core + L2) = 2.615
 
 
 #### L2 Cache Assoc
 
+
 * 4
-  * specbzip:239.703350 mJ
-  * spechmmer:182.315531 mJ
-  * specjeng:940.009153 mJ
-  * speclibm:362.957233 mJ
-  * specmcf:184.659352 mJ
+  * specbzip:
+      * Energy = 239.703350 mJ 
+    * Peak Power(Core + L2) = 
+  * spechmmer:
+      * Energy = 182.315531 mJ
+    * Peak Power(Core + L2) = 
+  * specjeng:
+      * Energy = 940.009153 mJ
+    * Peak Power(Core + L2) = 
+  * speclibm:
+      * Energy = 362.957233 mJ
+    * Peak Power(Core + L2) =  2.485 W
+  * specmcf:
+      * Energy = 184.659352 mJ
+    * Peak Power(Core + L2) = 2.485 W
 * 8
-  * specbzip:239.703350 mJ
-  * spechmmer:182.315531 mJ
-  * specjeng:940.009153 mJ
-  * speclibm:362.957233 mJ
-  * specmcf:184.659352 mJ
+  * specbzip:
+      * Energy = 239.703350 mJ 
+    * Peak Power(Core + L2) = 
+  * spechmmer:
+      * Energy = 182.315531 mJ
+    * Peak Power(Core + L2) = 
+  * specjeng:
+      * Energy = 940.009153 mJ
+    * Peak Power(Core + L2) = 
+  * speclibm:
+      * Energy = 362.957233 mJ
+    * Peak Power(Core + L2) =  2.485 W
+  * specmcf:
+      * Energy = 184.659352 mJ
+    * Peak Power(Core + L2) = 2.485 W
 * 16
-  * specbzip:239.703350 mJ
-  * spechmmer:182.315531 mJ
-  * specjeng:940.009153 mJ
-  * speclibm:362.957233 mJ
-  * specmcf:184.659352 mJ
+  * specbzip:
+      * Energy = 239.703350 mJ 
+    * Peak Power(Core + L2) = 
+  * spechmmer:
+      * Energy = 182.315531 mJ
+    * Peak Power(Core + L2) = 
+  * specjeng:
+      * Energy = 940.009153 mJ
+    * Peak Power(Core + L2) = 
+  * speclibm:
+      * Energy = 362.957233 mJ
+    * Peak Power(Core + L2) =  2.485 W
+  * specmcf:
+      * Energy = 184.659352 mJ
+    * Peak Power(Core + L2) = 2.485 W
 * 32
-  * specbzip:239.703350 mJ
-  * spechmmer:182.315531 mJ
-  * specjeng:940.009153 mJ
-  * speclibm:362.957233 mJ
-  * specmcf:184.659352 mJ
+  * specbzip:
+      * Energy = 239.703350 mJ 
+    * Peak Power(Core + L2) = 
+  * spechmmer:
+      * Energy = 182.315531 mJ
+    * Peak Power(Core + L2) = 
+  * specjeng:
+      * Energy = 940.009153 mJ
+    * Peak Power(Core + L2) = 
+  * speclibm:
+      * Energy = 362.957233 mJ
+    * Peak Power(Core + L2) =  2.485 W
+  * specmcf:
+      * Energy = 184.659352 mJ
+    * Peak Power(Core + L2) = 2.485 W
  
 * [Energy Results Files-specbzip](https://github.com/christos99/9432_Christos_Chrysikos_C/tree/main/Energy%20results/specbzip) 
 * [Energy Results Files-spechmmer](https://github.com/christos99/9432_Christos_Chrysikos_C/tree/main/Energy%20results/spechmmer)
