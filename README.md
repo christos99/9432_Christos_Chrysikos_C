@@ -1,5 +1,7 @@
 # 9432_Christos_Chrysikos_C
 
+2nd Lab on gem-5 simulations Computer Architecture
+
 
 ## <ins>Part 1: Getting to know McPAT</ins>
 
@@ -66,10 +68,52 @@ Let's assume that Xeon takes 10 seconds to run a program. Being 40 times faster 
 
 
 ### 1.
-Here are in categories the parameter changed in every simulation (ex. default_configuration_of_gem5_L1_Cache_64kB). The ending of the name shows the changed parameter.  
 
-#### L1 Cache:
- * Default configuration:
+### 1. (Default Parameters of the CPU):
+#### CPU
+* cpu clock = 1GHz
+
+#### Cache
+
+
+* L1I:
+  * Size = 32kB
+  * Assoc = 2
+
+* L1D:
+  * Size = 64kB
+  * Assoc = 2
+
+* L2:
+   * Size = 2MB
+   * Assoc = 8
+
+* Cache Line:
+  * Size = 64
+  
+Here are in categories the parameter changed in every simulation (ex. default_configuration_of_gem5_L1_Cache_64kB). The ending of the name shows the changed parameter compared to the default CPU.
+
+
+### All the different configurations I used.  
+**(The list shows the different parameter that was changed while running the simulation, the other parameters do not vary from the default parameters used in the first simulation of this Lab above)**  
+
+* L1i and L1d = 64kB
+* L1i and L1d = 128kB
+* L1i and L1d = 256kB
+* L2 = 512kB
+* L2 = 1024kB
+* L2 = 2048kB
+* L2 = 4096kB
+* L1i and L1d Assoc= 6
+* L1i and L1d Assoc= 8
+* L1i and L1d Assoc= 10
+* L1i and L1d Assoc= 12
+* L2 Assoc= 4
+* L2 Assoc= 8
+* L2 Assoc= 16
+* L2 Assoc= 32
+
+
 #### L1 Cache
 
 * 64kB :
