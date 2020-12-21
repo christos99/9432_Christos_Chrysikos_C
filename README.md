@@ -7,7 +7,7 @@
 [Output of Xeon](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Output%20Files/Xeon.txt)
 
 #### Dynamic Power (Power Modeling):  
-Circuits dissipate dynamic power when they charge and discharge the capacitive loads to switch states. Dynamic power is proportional to the total load capacitance, the supply voltage, the voltage swing during switching, the clock frequency, and the activity factor. Dynamic Power depends on the program that we run.
+Circuits dissipate dynamic power when they charge and discharge the capacitive loads to switch states. Dynamic power is proportional to the total load capacitance, the supply voltage, the voltage swing during switching, the clock frequency, and the activity factor. Dynamic Power does not seem to depend on the program that we run but to system paramateters.
 
 [Reference](https://www.hpl.hp.com/research/mcpat/McPATAlpha_TechRep.pdf)
 
@@ -41,5 +41,74 @@ Let's assume that Xeon takes 10 seconds to run a program. Being 40 times faster 
      
 * [Output of Xeon](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Output%20Files/Xeon.txt)  
 * [Output of ARM](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Output%20Files/ARM.txt)
+
+
+## Part 2:
+
+
+### 1.
+Energy Consumed for all the different occasions.
+
+#### L1 Cache
+
+* 64kB :
+ * specbzip:304.612318 mJ
+ * spechmmer:230.257257 mJ
+* 128kB :
+ * specbzip:404.934228 mJ
+ * spechmmer:310.009355 mJ
+* 256kB :
+ * specbzip:478.687097 mJ
+ * spechmmer:487.544624 mJ
+
+
+#### L1 Cache Assoc
+
+* 6
+ * specbzip:239.703350 mJ
+ * spechmmer:182.315531 mJ
+* 8
+ * specbzip:239.703350 mJ
+ * spechmmer:182.315531 mJ
+* 10
+ * specbzip:239.703mJ
+ * spechmmer:182.315mJ
+* 12
+ * specbzip:239.703350 mJ
+ * spechmmer:182.315531 mJ
+
+#### L2 Cache
+
+* 512kB
+ * specbzip:243.260147 mJ
+ * spechmmer:181.772249 mJ
+* 1024kB
+ * specbzip:240.673442 mJ
+ * spechmmer:181.995179 mJ
+* 2048kB
+ * specbzip:239.703350 mJ
+ * spechmmer:182.315531 mJ
+* 4096kB
+ * specbzip:239.557962 mJ
+ * spechmmer:182.978396 mJ
+
+
+#### L2 Cache Assoc
+
+* 4
+ * specbzip:239.703350 mJ
+ * spechmmer:182.315531 mJ
+* 8
+ * specbzip:239.703350 mJ
+ * spechmmer:182.315531 mJ
+* 16
+ * specbzip:239.703350 mJ
+ * spechmmer:182.315531 mJ
+* 32
+ * specbzip:239.703350 mJ
+ * spechmmer:182.315531 mJ
+
+
+
 
 
