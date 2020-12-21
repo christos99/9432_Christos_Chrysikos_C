@@ -52,61 +52,64 @@ Energy Consumed for all the different occasions.
 #### L1 Cache
 
 * 64kB :
- * specbzip:304.612318 mJ
- * spechmmer:230.257257 mJ
+  * specbzip:304.612318 mJ
+  * spechmmer:230.257257 mJ
 * 128kB :
- * specbzip:404.934228 mJ
- * spechmmer:310.009355 mJ
+  * specbzip:404.934228 mJ
+  * spechmmer:310.009355 mJ
 * 256kB :
- * specbzip:478.687097 mJ
- * spechmmer:487.544624 mJ
+  * specbzip:478.687097 mJ
+  * spechmmer:487.544624 mJ
 
 
 #### L1 Cache Assoc
 
 * 6
- * specbzip:239.703350 mJ
- * spechmmer:182.315531 mJ
+  * specbzip:239.703350 mJ
+  * spechmmer:182.315531 mJ
 * 8
- * specbzip:239.703350 mJ
- * spechmmer:182.315531 mJ
+  * specbzip:239.703350 mJ
+  * spechmmer:182.315531 mJ
 * 10
- * specbzip:239.703mJ
- * spechmmer:182.315mJ
+  * specbzip:239.703mJ
+  * spechmmer:182.315mJ
 * 12
- * specbzip:239.703350 mJ
- * spechmmer:182.315531 mJ
+  * specbzip:239.703350 mJ
+  * spechmmer:182.315531 mJ
 
 #### L2 Cache
 
 * 512kB
- * specbzip:243.260147 mJ
- * spechmmer:181.772249 mJ
+  * specbzip:243.260147 mJ
+  * spechmmer:181.772249 mJ
 * 1024kB
- * specbzip:240.673442 mJ
- * spechmmer:181.995179 mJ
+  * specbzip:240.673442 mJ
+  * spechmmer:181.995179 mJ
 * 2048kB
- * specbzip:239.703350 mJ
- * spechmmer:182.315531 mJ
+  * specbzip:239.703350 mJ
+  * spechmmer:182.315531 mJ
 * 4096kB
- * specbzip:239.557962 mJ
- * spechmmer:182.978396 mJ
+  * specbzip:239.557962 mJ
+  * spechmmer:182.978396 mJ
 
 
 #### L2 Cache Assoc
 
 * 4
- * specbzip:239.703350 mJ
- * spechmmer:182.315531 mJ
+  * specbzip:239.703350 mJ
+  * spechmmer:182.315531 mJ
 * 8
- * specbzip:239.703350 mJ
- * spechmmer:182.315531 mJ
+  * specbzip:239.703350 mJ
+  * spechmmer:182.315531 mJ
 * 16
- * specbzip:239.703350 mJ
- * spechmmer:182.315531 mJ
+  * specbzip:239.703350 mJ
+  * spechmmer:182.315531 mJ
 * 32
- * specbzip:239.703350 mJ
- * spechmmer:182.315531 mJ
+  * specbzip:239.703350 mJ
+  * spechmmer:182.315531 mJ
+ 
+* [Energy Results Files-specbzip](https://github.com/christos99/9432_Christos_Chrysikos_C/tree/main/Energy%20results/specbzip) 
+* [Energy Results Files-spechmmer](https://github.com/christos99/9432_Christos_Chrysikos_C/tree/main/Energy%20results/spechmmer)
 
 ### 2.
 
