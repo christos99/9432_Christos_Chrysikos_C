@@ -108,6 +108,20 @@ Energy Consumed for all the different occasions.
  * specbzip:239.703350 mJ
  * spechmmer:182.315531 mJ
 
+### 2.
+
+### GRAPHS
+
+* specbzip
+
+![specbzip](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Graphs/specbzip.png)
+
+* spechmmer
+
+![spechmmer](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Graphs/spechmmer.png)
+
+
+
 
 
 
