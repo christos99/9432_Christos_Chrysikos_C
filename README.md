@@ -54,12 +54,21 @@ Energy Consumed for all the different occasions.
 * 64kB :
   * specbzip:304.612318 mJ
   * spechmmer:230.257257 mJ
+  * specjeng:1225.410820 mJ
+  * speclibm:469.125388 mJ
+  * specmcf:214.602407 mJ
 * 128kB :
   * specbzip:404.934228 mJ
   * spechmmer:310.009355 mJ
+  * specjeng:1660.129841 mJ
+  * speclibm:634.297256 mJ
+  * specmcf:289.067039 mJ
 * 256kB :
   * specbzip:478.687097 mJ
   * spechmmer:487.544624 mJ
+  * specjeng:1995.164951 mJ
+  * speclibm:449.788309 mJ
+  * specmcf:347.131705 mJ
 
 
 #### L1 Cache Assoc
@@ -67,30 +76,54 @@ Energy Consumed for all the different occasions.
 * 6
   * specbzip:239.703350 mJ
   * spechmmer:182.315531 mJ
+  * specjeng:940.009153 mJ
+  * speclibm:362.957233 mJ
+  * specmcf:184.659352 mJ
 * 8
   * specbzip:239.703350 mJ
   * spechmmer:182.315531 mJ
+  * specjeng:940.009153 mJ
+  * speclibm:362.957233 mJ
+  * specmcf:184.659352 mJ
 * 10
   * specbzip:239.703mJ
   * spechmmer:182.315mJ
+  * specjeng:940.009153 mJ
+  * speclibm:362.957233 mJ
+  * specmcf:184.659352 mJ
 * 12
   * specbzip:239.703350 mJ
   * spechmmer:182.315531 mJ
+  * specjeng:940.009153 mJ
+  * speclibm:362.957233 mJ
+  * specmcf:184.659352 mJ
 
 #### L2 Cache
 
 * 512kB
   * specbzip:243.260147 mJ
   * spechmmer:181.772249 mJ
+  * specjeng:932.459064 mJ
+  * speclibm:360.837240 mJ
+  * specmcf:183.856990 mJ
 * 1024kB
   * specbzip:240.673442 mJ
   * spechmmer:181.995179 mJ
+  * specjeng:935.426950 mJ
+  * speclibm:361.694166 mJ
+  * specmcf:184.121653 mJ
 * 2048kB
   * specbzip:239.703350 mJ
   * spechmmer:182.315531 mJ
+  * specjeng:940.009153 mJ
+  * speclibm:362.957233 mJ
+  * specmcf:184.659352 mJ
 * 4096kB
   * specbzip:239.557962 mJ
   * spechmmer:182.978396 mJ
+  * specjeng:946.424763 mJ
+  * speclibm:364.911324 mJ
+  * specmcf:185.915461 mJ
 
 
 #### L2 Cache Assoc
@@ -98,18 +131,34 @@ Energy Consumed for all the different occasions.
 * 4
   * specbzip:239.703350 mJ
   * spechmmer:182.315531 mJ
+  * specjeng:940.009153 mJ
+  * speclibm:362.957233 mJ
+  * specmcf:184.659352 mJ
 * 8
   * specbzip:239.703350 mJ
   * spechmmer:182.315531 mJ
+  * specjeng:940.009153 mJ
+  * speclibm:362.957233 mJ
+  * specmcf:184.659352 mJ
 * 16
   * specbzip:239.703350 mJ
   * spechmmer:182.315531 mJ
+  * specjeng:940.009153 mJ
+  * speclibm:362.957233 mJ
+  * specmcf:184.659352 mJ
 * 32
   * specbzip:239.703350 mJ
   * spechmmer:182.315531 mJ
+  * specjeng:940.009153 mJ
+  * speclibm:362.957233 mJ
+  * specmcf:184.659352 mJ
  
 * [Energy Results Files-specbzip](https://github.com/christos99/9432_Christos_Chrysikos_C/tree/main/Energy%20results/specbzip) 
 * [Energy Results Files-spechmmer](https://github.com/christos99/9432_Christos_Chrysikos_C/tree/main/Energy%20results/spechmmer)
+* [Energy Results Files-specjeng](https://github.com/christos99/9432_Christos_Chrysikos_C/tree/main/Energy%20results/specjeng) 
+* [Energy Results Files-speclibm](https://github.com/christos99/9432_Christos_Chrysikos_C/tree/main/Energy%20results/speclibm)
+* [Energy Results Files-specbmcf](https://github.com/christos99/9432_Christos_Chrysikos_C/tree/main/Energy%20results/specmcf) 
+
 
 ### 2.
 
