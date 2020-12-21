@@ -1,7 +1,7 @@
 # 9432_Christos_Chrysikos_C
 
 
-## Part 1:
+## Part 1: Getting to know McPAT
 
 ### 1.
 [Output of Xeon](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Output%20Files/Xeon.txt)
@@ -21,7 +21,7 @@ Example using the same system running two different benchmarks:
   * leakage = 2.129390 W 
   * runtime = 0.118297 s 
 
-We see that spechmmer has slighly greater dynamic power value than specbzip. It is a fact that both programms run on the same system and the only diffennce is runntime.
+We see that spechmmer has slighly greater dynamic power value than specbzip. Runtime does not affect the dynamic or static power but the energy consumtion of the system.
 
 
 
@@ -37,7 +37,8 @@ Transistors in circuits leak, dissipating static power. Leakage current depends 
 
 ### 2.
 
-In order to have longer battery life we need to know which processor consumes less energy, not power(Watts). Therefore we need the dynamic power the leakage and the simulation time. These are data that are extracted both from McPAT and from gem5. 
+The proccessor with th 40 W is propably going to be faster and therefore finish an application in less time than thee 4W, which means that the system is going to require less energy. For a more accurate answer we whould need to know the leakge power of the proccessor because that is what consumes energy after the application is finshed. The dynamic power ,the leakage and the simulation time are data that are extracted both from McPAT and from gem5 and are vital for a more accurate answer.
+
 
 
 ### 3.  
@@ -48,18 +49,19 @@ Let's assume that Xeon takes 10 seconds to run a program. Being 40 times faster 
 **Runtime Dynamic** 
 
   * Xeon == 72.9199 W  
-    EDP == (72.9199 + GL) x 10 == 729.199 + 10GL mJ
+    EDP == (72.9199 + 36.8319) x 1 == 134.938 mJ
   * ARM A9  == 2.96053 W  
-    EDP == (2.96053 + GL) x 40 == 118.4212 + 40GL mJ
+    EDP == (2.96053 + 0.108687) x 40 == 122.7652 mJ
     
- It is obvious that even though the ARM A9 runs for a longer period of time, it is much more energy efficient than the Xeon proccessor. In order for the Xeon proccessor to be as energy efficient as ARM it would need to run 245.5 times faster than ARM.
+ It is obvious that even though the ARM A9 runs for a longer period of time, but still is more energy efficient than the Xeon proccessor.
   
      
 * [Output of Xeon](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Output%20Files/Xeon.txt)  
 * [Output of ARM](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Output%20Files/ARM.txt)
 
 
-## Part 2:
+
+## Part 2: gem5 and McPAT
 
 
 ### 1.
@@ -70,13 +72,13 @@ Here are in categories the parameter changed every time (ex. default_configurati
 * 64kB :
   * specbzip: 
     * Energy = 304.612318 mJ
-    * Peak Power(Core + L2)  = 
+    * Peak Power(Core + L2)  = 3.079 W
   * spechmmer:
     * Energy = 230.257257 mJ
-    * Peak Power(Core + L2)  = 
+    * Peak Power(Core + L2)  = 3.079 W
   * specjeng:
     * Energy = 1225.410820 mJ
-    * Peak Power(Core + L2)  = 
+    * Peak Power(Core + L2)  = 3.089 W
   * speclibm:
     * Energy = 469.125388 mJ
     * Peak Power(Core + L2)  = 3.088 W
@@ -86,13 +88,13 @@ Here are in categories the parameter changed every time (ex. default_configurati
 * 128kB :
   * specbzip:
     * Energy = 404.934228 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 3.545 W
   * spechmmer:
     * Energy = 310.009355 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 3.545 W
   * specjeng:
     * Energy = 1660.129841 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 3.545 W
   * speclibm:
     * Energy = 634.297256 mJ
     * Peak Power(Core + L2) = 3.545 W
@@ -103,13 +105,13 @@ Here are in categories the parameter changed every time (ex. default_configurati
 * 256kB :
   * specbzip:
     * Energy = 478.687097 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 3.86 W
   * spechmmer:
     * Energy = 487.544624 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 3.86 W
   * specjeng:
     * Energy = 1995.164951 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 3.87 W
   * speclibm:
     * Energy = 449.788309 mJ
     * Peak Power(Core + L2) = 3.86 W
@@ -124,14 +126,13 @@ Here are in categories the parameter changed every time (ex. default_configurati
 * 6
   * specbzip:
     * Energy = 239.703350 mJ
-    * Peak Power(Core + L2) = 
-  
+    * Peak Power(Core + L2) = 2.48 W
   * spechmmer:
     * Energy = 182.315531 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * specjeng:
     * Energy = 940.009153 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * speclibm:
     * Energy = 362.957233 mJ
     * Peak Power(Core + L2) = 2.485 W 
@@ -141,13 +142,13 @@ Here are in categories the parameter changed every time (ex. default_configurati
 * 8
   * specbzip:
       * Energy = 239.703350 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * spechmmer:
       * Energy = 182.315531 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * specjeng:
       * Energy = 940.009153 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * speclibm:
       * Energy = 362.957233 mJ
     * Peak Power(Core + L2) = 2.485 W 
@@ -157,13 +158,13 @@ Here are in categories the parameter changed every time (ex. default_configurati
 * 10
   * specbzip:
       * Energy = 239.703mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * spechmmer:
       * Energy = 182.315mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * specjeng:
       * Energy = 940.009153 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * speclibm:
       * Energy = 362.957233 mJ
     * Peak Power(Core + L2) = 2.485 W
@@ -173,13 +174,13 @@ Here are in categories the parameter changed every time (ex. default_configurati
 * 12
   * specbzip:
       * Energy = 239.703350 mJ 
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * spechmmer:
       * Energy = 182.315531 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * specjeng:
       * Energy = 940.009153 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * speclibm:
       * Energy = 362.957233 mJ
     * Peak Power(Core + L2) =  2.485 W
@@ -192,67 +193,67 @@ Here are in categories the parameter changed every time (ex. default_configurati
 * 512kB
   * specbzip:
       * Energy = 2243.260147 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.315 W
   * spechmmer:
       * Energy = 181.772249 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.31  W
   * specjeng:
       * Energy = 932.459064 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.31 W
   * speclibm:
       * Energy = 360.837240 mJ 
-    * Peak Power(Core + L2) = 2.315
+    * Peak Power(Core + L2) = 2.315 W
   * specmcf:
       * Energy = 183.856990 mJ
-    * Peak Power(Core + L2) = 2.315
+    * Peak Power(Core + L2) = 2.315 W
 * 1024kB
   * specbzip:
       * Energy = 240.673442 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.39 W
   * spechmmer:
       * Energy = 181.995179 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.38 W
   * specjeng:
       * Energy = 935.426950 mJ 
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.38 W
   * speclibm:
       * Energy = 361.694166 mJ
-    * Peak Power(Core + L2) = 2.385
+    * Peak Power(Core + L2) = 2.385 W
   * specmcf:
       * Energy = 184.121653 mJ
-    * Peak Power(Core + L2) = 2.385
+    * Peak Power(Core + L2) = 2.385 W
 * 2048kB
   * specbzip:
       * Energy = 239.703350 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * spechmmer:
       * Energy = 182.315531 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * specjeng:
       * Energy = 940.009153 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * speclibm:
       * Energy = 362.957233 mJ
-    * Peak Power(Core + L2) = 2.485
+    * Peak Power(Core + L2) = 2.485 W 
   * specmcf:
       * Energy = 184.659352 mJ
-    * Peak Power(Core + L2) = 2.485
+    * Peak Power(Core + L2) = 2.485 W
 * 4096kB
   * specbzip:
       * Energy = 239.557962 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.61 W
   * spechmmer:
       * Energy = 182.978396 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.61 W
   * specjeng:
       * Energy = 946.424763 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.61 W 
   * speclibm:
       * Energy = 364.911324 mJ
-    * Peak Power(Core + L2) = 2.615
+    * Peak Power(Core + L2) = 2.615 W 
   * specmcf:
       * Energy = 185.915461 mJ
-    * Peak Power(Core + L2) = 2.615
+    * Peak Power(Core + L2) = 2.615 W
 
 
 #### L2 Cache Assoc
@@ -261,13 +262,13 @@ Here are in categories the parameter changed every time (ex. default_configurati
 * 4
   * specbzip:
       * Energy = 239.703350 mJ 
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * spechmmer:
       * Energy = 182.315531 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * specjeng:
       * Energy = 940.009153 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * speclibm:
       * Energy = 362.957233 mJ
     * Peak Power(Core + L2) =  2.485 W
@@ -277,13 +278,13 @@ Here are in categories the parameter changed every time (ex. default_configurati
 * 8
   * specbzip:
       * Energy = 239.703350 mJ 
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * spechmmer:
       * Energy = 182.315531 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * specjeng:
       * Energy = 940.009153 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * speclibm:
       * Energy = 362.957233 mJ
     * Peak Power(Core + L2) =  2.485 W
@@ -293,13 +294,13 @@ Here are in categories the parameter changed every time (ex. default_configurati
 * 16
   * specbzip:
       * Energy = 239.703350 mJ 
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * spechmmer:
       * Energy = 182.315531 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * specjeng:
       * Energy = 940.009153 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * speclibm:
       * Energy = 362.957233 mJ
     * Peak Power(Core + L2) =  2.485 W
@@ -309,13 +310,13 @@ Here are in categories the parameter changed every time (ex. default_configurati
 * 32
   * specbzip:
       * Energy = 239.703350 mJ 
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * spechmmer:
       * Energy = 182.315531 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * specjeng:
       * Energy = 940.009153 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.48 W
   * speclibm:
       * Energy = 362.957233 mJ
     * Peak Power(Core + L2) =  2.485 W
@@ -377,6 +378,12 @@ Here are in categories the parameter changed every time (ex. default_configurati
 * specmcf - Peak Power
 
 ![specmcf](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Graphs/specmcf_Peak_Power.png)
+
+### Conclussion
+
+We can see from the above graphs that peak power is strictly correlated with L1 Cache size, the bigger the cache the greater the peak power. We assume that every relut we got can differ in some percentage from the reality. This occurs cause McPAT is a simulator just like gem5 and simulates the reults based on algorithms.
+
+
 
 
 
