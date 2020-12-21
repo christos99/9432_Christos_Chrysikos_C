@@ -7,7 +7,7 @@
 [Output of Xeon](https://github.com/christos99/9432_Christos_Chrysikos_C/blob/main/Output%20Files/Xeon.txt)
 
 #### Dynamic Power (Power Modeling):  
-Circuits dissipate dynamic power when they charge and discharge the capacitive loads to switch states. Dynamic power is proportional to the total load capacitance, the supply voltage, the voltage swing during switching, the clock frequency, and the activity factor. Dynamic Power does not seem to depend on the program that we run but to system paramateters.
+Circuits dissipate dynamic power when they charge and discharge the capacitive loads to switch states. Dynamic power is proportional to the total load capacitance, the supply voltage, the voltage swing during switching, the clock frequency, and the activity factor. Dynamic Power does  seem to be affected by the program that we run but not as much as of changing system paramateters.
 
 [Reference](https://www.hpl.hp.com/research/mcpat/McPATAlpha_TechRep.pdf)
 
@@ -32,9 +32,9 @@ Let's assume that Xeon takes 10 seconds to run a program. Being 40 times faster 
 **Runtime Dynamic** 
 
   * Xeon == 72.9199 W  
-    EDP == (72.9199 + GL) * 10 == 729.199 mJ
+    EDP == (72.9199 + GL) x 10 == 729.199 + 10GL mJ
   * ARM A9  == 2.96053 W  
-    EDP == (2.96053 + GL) * 40 == 118.4212 mJ
+    EDP == (2.96053 + GL) x 40 == 118.4212 + 40GL mJ
     
  It is obvious that even though the ARM A9 runs for a longer period of time, it is much more energy efficient than the Xeon proccessor. In order for the Xeon proccessor to be as energy efficient as ARM it would need to run 245.5 times faster than ARM.
   
