@@ -201,7 +201,7 @@ Energy Consumed for all the different occasions.
     * Peak Power(Core + L2) = 
   * speclibm:
       * Energy = 360.837240 mJ 
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.315
   * specmcf:
       * Energy = 183.856990 mJ
     * Peak Power(Core + L2) = 2.315
@@ -217,7 +217,7 @@ Energy Consumed for all the different occasions.
     * Peak Power(Core + L2) = 
   * speclibm:
       * Energy = 361.694166 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.385
   * specmcf:
       * Energy = 184.121653 mJ
     * Peak Power(Core + L2) = 2.385
@@ -233,7 +233,7 @@ Energy Consumed for all the different occasions.
     * Peak Power(Core + L2) = 
   * speclibm:
       * Energy = 362.957233 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.485
   * specmcf:
       * Energy = 184.659352 mJ
     * Peak Power(Core + L2) = 2.485
@@ -249,7 +249,7 @@ Energy Consumed for all the different occasions.
     * Peak Power(Core + L2) = 
   * speclibm:
       * Energy = 364.911324 mJ
-    * Peak Power(Core + L2) = 
+    * Peak Power(Core + L2) = 2.615
   * specmcf:
       * Energy = 185.915461 mJ
     * Peak Power(Core + L2) = 2.615
