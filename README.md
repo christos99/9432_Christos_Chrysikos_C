@@ -97,7 +97,7 @@ Here are in categories the parameter changed in every simulation (ex. default_co
 
 
 ### All the different configurations I used.  
-**(The list shows the different parameter that was changed while running the simulation, the other parameters do not vary from the default parameters used in the first simulation of this Lab above)**  
+**(The list shows the different parameter that was changed while running the simulation, the other parameters do not vary from the default parameters)**  
 
 * L1i and L1d = 64kB
 * L1i and L1d = 128kB
