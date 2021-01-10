@@ -115,50 +115,50 @@ Here are in categories the parameter changed in every simulation (ex. default_co
 
 #### L1 Cache
 
-| Parameter Changed |       |  L1 Cache |                |            |   |   |
-|:-----------------:|-------|:---------:|----------------|------------|---|---|
-|     Sim Number    |  Size | Spec      | Energy         | Peak Power |   |   |
-|         1         | 64 kB | specbzip  | 304.612318 mJ  | 3.079 W    |   |   |
-|         2         | 64 kB | spechmmer | 230.257257 mJ  | 3.079 W    |   |   |
-|         3         | 64 kB | specjeng  | 1225.410820 mJ | 3.089 W    |   |   |
-|         4         | 64 kB | speclibm  | 469.125388 mJ  | 3.088 W    |   |   |
-|         5         | 64 kB | specmcf   | 214.602407 mJ  | 3.088 W    |   |   |
-|         6         | 128kB | specbzip  | 404.934228 mJ  | 3.545 W    |   |   |
-|         7         | 128kB | spechmmer | 310.009355 mJ  | 3.545 W    |   |   |
-|         8         | 128kB | specjeng  | 1660.129841 mJ | 3.545 W    |   |   |
-|         9         | 128kB | speclibm  | 634.297256 mJ  | 3.545 W    |   |   |
-|         10        | 128kB | specmcf   | 289.067039 mJ  | 3.545 W    |   |   |
-|         11        | 256kB | specbzip  | 478.687097 mJ  | 3.86 W     |   |   |
-|         12        | 256kB | spechmmer | 487.544624 mJ  | 3.86 W     |   |   |
-|         13        | 256kB | specjeng  | 1995.164951 mJ | 3.86 W     |   |   |
-|         14        | 256kB | speclibm  | 449.788309 mJ  | 3.86 W     |   |   |
-|         15        | 256kB | specmcf   | 347.131705 mJ  | 3.86 W     |   |   |
+| Parameter Changed |       |  L1 Cache |                |            |
+|:-----------------:|-------|:---------:|----------------|------------|
+|     Sim Number    |  Size | Spec      | Energy         | Peak Power |
+|         1         | 64 kB | specbzip  | 304.612318 mJ  | 3.079 W    |
+|         2         | 64 kB | spechmmer | 230.257257 mJ  | 3.079 W    |
+|         3         | 64 kB | specjeng  | 1225.410820 mJ | 3.089 W    |  
+|         4         | 64 kB | speclibm  | 469.125388 mJ  | 3.088 W    |
+|         5         | 64 kB | specmcf   | 214.602407 mJ  | 3.088 W    |
+|         6         | 128kB | specbzip  | 404.934228 mJ  | 3.545 W    | 
+|         7         | 128kB | spechmmer | 310.009355 mJ  | 3.545 W    |
+|         8         | 128kB | specjeng  | 1660.129841 mJ | 3.545 W    |
+|         9         | 128kB | speclibm  | 634.297256 mJ  | 3.545 W    | 
+|         10        | 128kB | specmcf   | 289.067039 mJ  | 3.545 W    | 
+|         11        | 256kB | specbzip  | 478.687097 mJ  | 3.86 W     | 
+|         12        | 256kB | spechmmer | 487.544624 mJ  | 3.86 W     | 
+|         13        | 256kB | specjeng  | 1995.164951 mJ | 3.86 W     |
+|         14        | 256kB | speclibm  | 449.788309 mJ  | 3.86 W     |
+|         15        | 256kB | specmcf   | 347.131705 mJ  | 3.86 W     |
 
 #### L1 Cache Assoc
 
-| Parameter Changed |               | L1 Cache  Assoc |               |            |   |   |
-|:-----------------:|:-------------:|:---------------:|:-------------:|:----------:|---|---|
-|     Sim Number    | Associativity |       Spec      | Energy        | Peak Power |   |   |
-|         1         |       6       |     specbzip    | 239.703350 mJ |   2.48 W   |   |   |
-|         2         |       6       |    spechmmer    | 182.315531 mJ |   2.48 W   |   |   |
-|         3         |       6       |     specjeng    | 940.009153 mJ |   2.48 W   |   |   |
-|         4         |       6       |     speclibm    | 362.957233 mJ |   2.485 W  |   |   |
-|         5         |       6       |     specmcf     | 184.659352 mJ |   2.485 W  |   |   |
-|         6         |       8       |     specbzip    | 239.703350 mJ |   2.48 W   |   |   |
-|         7         |       8       |    spechmmer    | 182.315531 mJ |   2.48 W   |   |   |
-|         8         |       8       |     specjeng    | 940.009153 mJ |   2.48 W   |   |   |
-|         9         |       8       |     speclibm    | 362.957233 mJ |   2.485 W  |   |   |
-|         10        |       8       |     specmcf     | 184.659352 mJ |   2.485 W  |   |   |
-|         11        |       10      |     specbzip    | 239.703350 mJ |   2.48 W   |   |   |
-|         12        |       10      |    spechmmer    | 182.315531 mJ |   2.48 W   |   |   |
-|         13        |       10      |     specjeng    | 940.009153 mJ |   2.48 W   |   |   |
-|         14        |       10      |     speclibm    | 362.957233 mJ |   2.485 W  |   |   |
-|         15        |       10      |     specmcf     | 184.659352 mJ |   2.485 W  |   |   |
-|         16        |       12      |     specbzip    | 239.703350 mJ |   2.48 W   |   |   |
-|         17        |       12      |    spechmmer    | 182.315531 mJ |   2.48 W   |   |   |
-|         18        |       12      |     specjeng    | 940.009153 mJ |   2.48 W   |   |   |
-|         19        |       12      |     speclibm    | 362.957233 mJ |   2.485 W  |   |   |
-|         20        |       12      |     specmcf     | 184.659352 mJ |   2.485 W  |   |   |
+| Parameter Changed |               | L1 Cache  Assoc |               |            |
+|:-----------------:|:-------------:|:---------------:|:-------------:|:----------:|
+|     Sim Number    | Associativity |       Spec      | Energy        | Peak Power |
+|         1         |       6       |     specbzip    | 239.703350 mJ |   2.48 W   |
+|         2         |       6       |    spechmmer    | 182.315531 mJ |   2.48 W   |
+|         3         |       6       |     specjeng    | 940.009153 mJ |   2.48 W   |
+|         4         |       6       |     speclibm    | 362.957233 mJ |   2.485 W  |
+|         5         |       6       |     specmcf     | 184.659352 mJ |   2.485 W  |
+|         6         |       8       |     specbzip    | 239.703350 mJ |   2.48 W   |
+|         7         |       8       |    spechmmer    | 182.315531 mJ |   2.48 W   |
+|         8         |       8       |     specjeng    | 940.009153 mJ |   2.48 W   |
+|         9         |       8       |     speclibm    | 362.957233 mJ |   2.485 W  |
+|         10        |       8       |     specmcf     | 184.659352 mJ |   2.485 W  |
+|         11        |       10      |     specbzip    | 239.703350 mJ |   2.48 W   |
+|         12        |       10      |    spechmmer    | 182.315531 mJ |   2.48 W   |
+|         13        |       10      |     specjeng    | 940.009153 mJ |   2.48 W   |
+|         14        |       10      |     speclibm    | 362.957233 mJ |   2.485 W  |
+|         15        |       10      |     specmcf     | 184.659352 mJ |   2.485 W  |
+|         16        |       12      |     specbzip    | 239.703350 mJ |   2.48 W   |
+|         17        |       12      |    spechmmer    | 182.315531 mJ |   2.48 W   |
+|         18        |       12      |     specjeng    | 940.009153 mJ |   2.48 W   |
+|         19        |       12      |     speclibm    | 362.957233 mJ |   2.485 W  |
+|         20        |       12      |     specmcf     | 184.659352 mJ |   2.485 W  |
 
 
 
@@ -166,29 +166,29 @@ Here are in categories the parameter changed in every simulation (ex. default_co
 
 #### L2 Cache
     
-| Parameter Changed |       |  L2 Cache |                |            |   |   |
-|:-----------------:|-------|:---------:|----------------|------------|---|---|
-|     Sim Number    |  Size | Spec      | Energy         | Peak Power |   |   |
-|         1         | 64 kB | specbzip  | 2243.260147 mJ | 2.315 W    |   |   |
-|         2         | 64 kB | spechmmer | 181.772249 mJ  | 2.31  W    |   |   |
-|         3         | 64 kB | specjeng  | 932.459064 mJ  | 2.31  W    |   |   |
-|         4         | 64 kB | speclibm  | 360.837240 mJ  | 2.315 W    |   |   |
-|         5         | 64 kB | specmcf   | 183.856990 mJ  | 2.315 W    |   |   |
-|         6         | 128kB | specbzip  | 240.673442 mJ  | 2.39 W     |   |   |
-|         7         | 128kB | spechmmer | 181.995179 mJ  | 2.38 W     |   |   |
-|         8         | 128kB | specjeng  | 935.426950 mJ  | 2.38 W     |   |   |
-|         9         | 128kB | speclibm  | 361.694166 mJ  | 2.385 W    |   |   |
-|         10        | 128kB | specmcf   | 184.121653 mJ  | 2.385 W    |   |   |
-|         11        | 256kB | specbzip  | 239.703350 mJ  | 2.48 W     |   |   |
-|         12        | 256kB | spechmmer | 182.315531 mJ  | 2.48 W     |   |   |
-|         13        | 256kB | specjeng  | 940.009153 mJ  | 2.48 W     |   |   |
-|         14        | 256kB | speclibm  | 362.957233 mJ  | 2.485 W    |   |   |
-|         15        | 256kB | specmcf   | 184.659352 mJ  | 2.485 W    |   |   |
-|         16        | 256kB | specbzip  | 239.557962 mJ  | 2.61 W     |   |   |
-|         17        | 256kB | spechmmer | 182.978396 mJ  | 2.61 W     |   |   |
-|         18        | 256kB | specjeng  | 946.424763 mJ  | 2.61 W     |   |   |
-|         19        | 256kB | speclibm  | 364.911324 mJ  | 2.615 W    |   |   |
-|         20        | 256kB | specmcf   | 185.915461 mJ  | 2.615 W    |   |   |
+| Parameter Changed |       |  L2 Cache |                |            |
+|:-----------------:|-------|:---------:|----------------|------------|
+|     Sim Number    |  Size | Spec      | Energy         | Peak Power |
+|         1         | 64 kB | specbzip  | 2243.260147 mJ | 2.315 W    |
+|         2         | 64 kB | spechmmer | 181.772249 mJ  | 2.31  W    |
+|         3         | 64 kB | specjeng  | 932.459064 mJ  | 2.31  W    |
+|         4         | 64 kB | speclibm  | 360.837240 mJ  | 2.315 W    |
+|         5         | 64 kB | specmcf   | 183.856990 mJ  | 2.315 W    |
+|         6         | 128kB | specbzip  | 240.673442 mJ  | 2.39 W     |
+|         7         | 128kB | spechmmer | 181.995179 mJ  | 2.38 W     |
+|         8         | 128kB | specjeng  | 935.426950 mJ  | 2.38 W     |
+|         9         | 128kB | speclibm  | 361.694166 mJ  | 2.385 W    |
+|         10        | 128kB | specmcf   | 184.121653 mJ  | 2.385 W    |
+|         11        | 256kB | specbzip  | 239.703350 mJ  | 2.48 W     |
+|         12        | 256kB | spechmmer | 182.315531 mJ  | 2.48 W     |
+|         13        | 256kB | specjeng  | 940.009153 mJ  | 2.48 W     |
+|         14        | 256kB | speclibm  | 362.957233 mJ  | 2.485 W    |
+|         15        | 256kB | specmcf   | 184.659352 mJ  | 2.485 W    |
+|         16        | 256kB | specbzip  | 239.557962 mJ  | 2.61 W     |
+|         17        | 256kB | spechmmer | 182.978396 mJ  | 2.61 W     |
+|         18        | 256kB | specjeng  | 946.424763 mJ  | 2.61 W     |
+|         19        | 256kB | speclibm  | 364.911324 mJ  | 2.615 W    |
+|         20        | 256kB | specmcf   | 185.915461 mJ  | 2.615 W    |
 
 
 #### L2 Cache Assoc
